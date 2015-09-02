@@ -9,4 +9,4 @@ Requires:
 
 CUDA toolkit, MultiNEAT, PyCUDA
 
-The setup is a little unusual. Before running setup.py for MultiNEAT, you should place the provided neuralnetwork.cpp file into the multineat/lib folder where it usually is, replacing the existing file. This alters the Output() method to output the parameters of the network instead of the actual output of the network. WARNING: This breaks the normal functionality of this function. This was the easiest solution for my use case, but of course not optimal. If you want a normally functioning version of MultiNEAT you should maintain that separately from this installation.
+The setup is a little unusual. Before running setup.py for MultiNEAT, you should place the provided NeuralNetwork.cpp file into MultiNEAT/lib, replacing the existing file. This alters the code so that the Output() method outputs the parameters of the network instead of the actual output of the network. WARNING: This breaks the normal functionality of this function. This was the easiest solution for my use case, but of course not optimal. If you want a normally functioning version of MultiNEAT you should maintain that separately from this installation.
