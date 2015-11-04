@@ -1,7 +1,7 @@
 # cuda-neat
 Parallel evaluation of NEAT genomes.
 
-Specifically, enables the execution of a single NEAT neural network on many data in parallel. This is useful when you need to test each genome on a large data set. There will of course be no increase in performance (probably a decrease, due to the GPU bandwith problem) on a small dataset.
+Specifically, enables the execution of a single NEAT neural network on many data in parallel. This is useful when you need to test each genome on a large data set. There will of course be no increase in performance (probably a decrease, due to the GPU bandwidth problem) on a small dataset.
 
 The kernel is set up to execute a network with 1 hidden layer (3 executions). It can be easily altered for fewer. As well, it is set up for a one dimensional output, which can also be altered. Both of these parameters will be made more easily customizable when I get around to it.
 
